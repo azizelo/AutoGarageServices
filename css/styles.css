@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.jumbotron {
+  background-image: url("../img/mecanicien-automobile-examen_1170-1686.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  color: chartreuse;
+  border-radius: 0px !important; }
+
+.intro {
+  padding-top: 40vh; }
+
+.navbar-nav a {
+  color: chartreuse; }
+
+.navbar-brand {
+  color: chartreuse; }
+
+.fa-bars {
+  color: chartreuse; }
+
+.fa-car {
+  color: chartreuse; }
+
+.jumbotron .container {
+  position: relative;
+  margin-top: 30vh;
+  z-index: 2;
+  background: rgba(5, 2, 34, 0.4);
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px; }
+
+.media h2 {
+  font-size: 1.6em; }
+
+.btn-block {
+  align-items: center;
+  margin-top: 50px; }
+
+body {
+  background-color: #3fe0d0; }
+
+.row-content {
+  min-height: 300px;
+  align-items: center; }
+
+.fa {
+  color: chartreuse; }
