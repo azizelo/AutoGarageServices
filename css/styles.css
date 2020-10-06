@@ -44,9 +44,15 @@
 body {
   background-color: #3fe0d0; }
 
+.breadcrumb {
+  background-color: #3fe0d0; }
+
 .row-content {
   min-height: 300px;
   align-items: center; }
 
 .fa {
   color: chartreuse; }
+
+#mycarousel {
+  height: 150px; }
