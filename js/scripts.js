@@ -1,23 +1,28 @@
-
-$(document).ready(function () {
+/* 
+$(function() {
     $('#mycarousel').carousel({ interval: 10000, pause: "false" });
-    $('#carouselButton').click(function () {
-        if ($('#carouselButton').children('span').hasClass('fa fa-pause')) {
-            $('#mycarousel').carousel('pause');
-            $('#carouselButton').children('span').removeClass('fa-pause');
-            $('#carouselButton').children('span').addClass('fa-play');
-
-        }
-        else if ($('#carouselButton').children('span').hasClass('fa fa-play')) {
-            $('#mycarousel').carousel('cycle');
-            $('#carouselButton').children('span').removeClass('fa-play');
-            $('#carouselButton').children('span').addClass('fa-pause');
-
-        }
-    });
-
-    $('#reserveButton').click(function () {
-        $('#reserveModal').modal('toggle');
-    });
-
 });
+ */
+
+$(document).ready(function() {
+
+
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+         //>=, not <=
+        if (scroll >= 160) {
+            //clearHeader, not clearheader - caps H
+            $(".navbar").hide();
+        } else {
+          $(".navbar").show();
+        }
+    }); //missing );
+      
+      
+      
+      
+    
+      
+    // document ready  
+    });

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="initial-scale = 1.0, shrink-to-fit=no, maximum-scale = 1.0" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -11,182 +11,229 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- endbuild-->
-    <title>Auto Garage Services</title>
+    <title>Auto Garage Services | Accueil</title>
 </head>
 
 <body>
     <section id="header">
-        <nav class="navbar navbar-expand-sm fixed-top">
-            <a class="navbar-brand" href="#"><span><i class="fa fa-car mr-2"></i></span>Auto Garage Services</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="#"><i class="fa fa-car mr-2"></i>Auto Garage Services</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarAltMarkup"
+                aria-controls="navbarAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto align-items-center">
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg mr-1"></span>Acceuil<span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="./a-propos.html"><span class="fa fa-info fa-lg mr-1 "></span>A Propos</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="./contactez-nous.html"><span class="fa fa-address-card fa-lg mr-1"></span>Contactez-Nous</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="https://wa.me/212662107878"><span class="fa fa-whatsapp fa-lg mr-1"></span>Whatsapp</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tel:+212537630649"><span class="fa fa-phone mr-1"></span>Téléphone</a></li>
+            <div class="collapse navbar-collapse" id="navbarAltMarkup">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="#"><span
+                                class="fa fa-home fa-lg mr-1"></span>Acceuil<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./a-propos.html"><span
+                                class="fa fa-info fa-lg mr-1 "></span>A Propos</a></li>
+                    <li class="nav-item "><a class="nav-link" href="https://wa.me/212662107878"><span
+                                class="fa fa-whatsapp fa-lg mr-1"></span>Whatsapp</a></li>
+                    <li class="nav-item "><a class="nav-link" href="tel:+212537630649"><span
+                                class="fa fa-phone mr-1"></span>Téléphone</a></li>
                 </ul>
             </div>
         </nav>
     </section>
 
-    <div class="jumbotron text-center">
-        <div class="row ">
-            <div class="intro container">
-                <h1 class="display-4 mt-2">Honnêteté, Qualité et Ponctualité</h1>
-                <div class="row  btn-block">
-                    <a class="btn btn-outline-success btn-lg" href="https://wa.me/212662107878"><span class="fa fa-whatsapp fa-lg mr-1"></span>Whatsapp</a>
-                    <a class="btn btn-outline-warning btn-lg" href="tel:+212537630649"><span class="fa fa-phone mr-1"></span>Téléphone</a>
+    <div class="jumbotron text-center mb-0">
+        <div class="intro container pt-0">
+            <div class="row justify-content-center pt-0">
+                <h1 class="display-4 pt-0">Honnêteté, Qualité et Ponctualité</h1>
+                <div class="btn-block">
+                    <a class="btn btn-success btn-lg mr-2" href="https://wa.me/212662107878"><span
+                            class="fa fa-whatsapp fa-lg mr-1"></span>Whatsapp</a>
+                    <a class="btn btn-outline-warning btn-lg" href="tel:+212537630649"><span
+                            class="fa fa-phone mr-1"></span>Téléphone</a>
                 </div>
             </div>
-           
-
         </div>
-        
 
+    </div>
+    <button id="covidButton" type="button" class="btn btn-outline-warning mt-0 text-left col-12 active"
+        data-toggle="modal" data-target="#myModal">
+        <i class="fa fa-exclamation-triangle fa-sm mr-1"></i>Covid-19 - Votre santé et securité sont notre priorité. En
+        savoir plus sur nos mesures impécables...
+    </button>
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Notice Covid-19</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>Nous prenons votre santé et securité et celle de nos employées très au serieux!</p>
+                    <p>Toutes les précautions sanitaires sont prises pour respecter <a
+                            href="https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public">
+                            les consignes de l'Organization Mondiale de la Santé</a>. Le port du masque et la
+                        distansassion sont obligatoires.</p>
+                    <p>Prenez avantage de nos services de <strong>diagnostic à distance gratuit</strong> pour minimiser
+                        le plus possible le contact direct et profitez de notre <strong>service voiturier</strong>, pour
+                        eviter la foule.</p>
+                    <p>Toutes les surfaces interne de nos voitures sont désinfectés et l'interieur aéré avant la
+                        livraison!</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-    <div class="container mt-0">
+    <section id="testimonials">
+        <div id="mycarousel" class="carousel slide mt-5" data-ride="carousel">
+            <div class="carousel-inner container" role="listbox">
+                <div class="carousel-item active">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">"Si Mohammed est le seul mechano à qui je fais confiance!"</p>
+                        <footer class="blockquote-footer">Abdellah N.</footer>
+                    </blockquote>
+                </div>
+
+                <div class="carousel-item">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">...plusieurs ateliers y compris la maison mère n’ont pas pu
+                            diagnostiquer ma panne. L’expérience de Si Mohammed a résolu mon problème et à
+                            moindre prix!</p>
+                        <footer class="blockquote-footer">Mounir B.</footer>
+                    </blockquote>
+                </div>
+
+                <div class="carousel-item">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">Je sens que ma voiture est dans de bonnes mains, Si Elouaqid me
+                            donne
+                            cette certitude.</p>
+                        <footer class="blockquote-footer">Fouzia D.</footer>
+                    </blockquote>
+                </div>
+
+                <div class="carousel-item">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">L’année dernière, Si Elouaqid m’a fait économiser 7000.00 dhs
+                            comparé
+                            aux tarifs de la maison mère!</p>
+                        <footer class="blockquote-footer">Hamid A.</footer>
+                    </blockquote>
+                </div>
+            </div>
+
+           <!--  <ol class="carousel-indicators">
+                <li data-target="mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="mycarousel" data-slide-to="1"></li>
+                <li data-target="mycarousel" data-slide-to="2"></li>
+                <li data-target="mycarousel" data-slide-to="3"></li>
+            </ol> -->
+            <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+    </section>
+    
+    <section id="services">
+        <div class="container">
+            <div class="row row-content align-items-center">
+                <div class="media col col-sm order-sm-first col-md ">
+                    <img class="d-fex mr-3 align-self-top" src="./img/phone-small.jpg" alt="Machanic on the phone">
+                    <div class="media-body">
+                        <h2 class="mt-0">Diagnostic à Distance</h2>
+                        <p>Économisez en utilisant notre service gratuit de diagnostic à
+                            distance. Notre savoir et nos compétences sont là pour vous guider
+                            sur la prise en charge et le degré d'urgence de votre réparation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row row-content align-items-center">
+                <div class="media col col-sm col-md align-items-center">
+                    <div class="media-body">
+                        <h2 class="mt-0">Garage Voiturier</h2>
+                        <p>Fini le stress! Partez l'esprit tranquille!
+                            Récupération, réparation et livraison de votre voiture à votre convenance.
+                        </p>
+                    </div>
+                    <img class="d-flex ml-1 media-right align-self-top" src="./img/handoff-small.jpg" alt="Buffet">
+                </div>
+    
+            </div>
+    
+            <div class="row row-content align-items-center">
+                <div class="media col col-sm order-sm-first col-md align-items-center">
+                    <img class="d-flex mr-3 align-self-center" style="width:180px; height: 180px;"
+                        src="./img/satisfaction.png" alt="Satisfaction">
+                    <div class="media-body">
+                        <h2>Satisfaction Garantie</h2>
+                        <p>Pièces ou main d'oeuvre, nous garantissons notre travail et votre voiture devient notre voiture.
+                            Votre
+                            sécurité et votre contentement sont notre priorité.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="container">
         <div class="row">
-            <div class="col">
-                <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <blockquote class="blockquote text-center">
-                                <p class="mb-0">Si Mohammad est le seul mechano à qui je fais confiance!</p>
-                                <footer class="blockquote-footer">Abdellah N.</footer>
-                            </blockquote>           
-                        </div>
-
-                        <div class="carousel-item">
-                            <blockquote class="blockquote text-center">
-                                <p class="mb-0">...plusieurs ateliers y compris la maison mère,
-                                    il n'y a que Si Mohammad qui a pu correctement diagnostiquer le problème...</p>
-                                <footer class="blockquote-footer">Mounir B.</footer>
-                            </blockquote>
-                        </div>
-
-                        <div class="carousel-item">
-                            <blockquote class="blockquote text-center">
-                                <p class="mb-0">L'année derinère, Si El Ouaqid m'a économisé au moins 7,000dhs comparé à la maison mère!</p>
-                                <footer class="blockquote-footer">Hamid A.</footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                    <ol class="carousel-indicators">
-                        <li data-target="mycarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="mycarousel" data-slide-to="1"></li>
-                        <li data-target="mycarousel" data-slide-to="2"></li>
-                    </ol>
-                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
-
-<!--                     <button class="btn btn-sm" id="carouselButton">
-                        <span class="fa fa-pause"></span>
-                    </button> -->
-                </div>
+            <div class="col-4 offset-1 col-sm-2">
+                <h5>Liens</h5>
+                <ul class="list-unstyled">
+                    <li><a href="./index.html">Acceuil</a></li>
+                    <li><a href="/a-propos.html">A Propos</a></li>
+                </ul>
             </div>
-
-        </div>
-
-
-        <div class="row row-content align-items-center">
-            <div class="media col col-sm order-sm-first col-md ">
-                <img class="d-fex mr-3 align-self-top" src="./img/phone-small.jpg" alt="Machanic on the phone">
-                <div class="media-body">
-                    <h2 class="mt-0">Diagnostics à Distance</h2>
-                    <p class="">Économisez du temps et de l’argent en utilisant notre service gratuit de diagnostic à distance. Avec plus de 50 ans d’expérience, nous vous faisons savoir si les réparations sont urgentes ou non.
-                    </p>
+            <div class="col-7 col-sm-5">
+                <h5>Notre Adresse</h5>
+                <address>
+                    177 rue iksi Nahda lll<br>
+                    Rabat, Maroc<br>
+                    <i class="fa fa-phone fa-lg mr-2"></i>:+212 537 63 06 49<br>
+                    <i class="fa fa-whatsapp fa-lg mr-2"></i>:<a href="https://wa.me/212662107878">+212 662 10
+                        78 78</a><br>
+                    <i class="fa fa-envelope fa-lg"></i>: <a
+                        href="mailto:autogarageservices177@gmail.com">autogara...@gmail</a>
+                </address>
+            </div>
+            <div class="col-12 col-sm-4 align-self-center">
+                <div class="text-center">
+                    <a class="btn btn-social-icon btn-facebook"
+                        href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-whatsapp" href="https://wa.me/212662107878"><i
+                            class="fa fa-whatsapp fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-email" href="mailto:autogarageservices177@gmail.com"><i
+                            class="fa fa-envelope fa-lg"></i></a>
                 </div>
             </div>
         </div>
-
-
-        <div class="row row-content align-items-center">
-            <div class="media col col-sm col-md align-items-center">
-                <div class="media-body">
-                    <h2 class="mt-0">Ramassage et Livraison</h2>
-                    <p class="">On vous rencontre à l'endroit de votre choix, emmenne votre voiture pour réparer, et vous la retourne dès qu'elle est prête</p>
-                </div>
-                <img class="d-flex ml-1 media-right align-self-top" src="./img/handoff-small.jpg"
-                    alt="Buffet">
-            </div>
-
-        </div>
-
-        <div class="row row-content align-items-center">
-            <div class="media col col-sm order-sm-first col-md align-items-center">
-                <img class="d-flex mr-3 align-self-center" style="width:180px; height: 180px;" src="./img/satisfaction.png" alt="Satisfaction">
-                <div class="media-body">
-                    <h2>Satisfaction Guarantie</h2>
-                    <p class="">Nous guarantissons toutes les pièces installées et la main d'oeuvre. Pour une tranquillité d’esprit complète, si vous n’êtes pas satisfait, nous ferons tout notre possible pour que vous les soyez.
-                    </p>
-                </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <p>© Copyright 2020 Auto Garage Services</p>
             </div>
         </div>
+    </div>
+</footer>
 
-        <!-- Footer -->
-
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 offset-1 col-sm-2">
-                        <h5>Liens</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Acceuil</a></li>
-                            <li><a href="/a-propos.html">A Propos</a></li>
-                            <li><a href="./contactez-nous.html">Contactez-Nous</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-7 col-sm-5">
-                        <h5>Notre Adresse</h5>
-                        <address>
-
-                            177 rue iksi Nahda lll<br>
-                            Rabat, Maroc<br>
-                            <i class="fa fa-phone fa-lg mr-2"></i>:+212 537 63 06 49<br>
-                            <i class="fa fa-whatsapp fa-lg mr-2"></i>:<a href="https://wa.me/212662107878">+212 662 10
-                                78 78</a><br>
-                            <i class="fa fa-envelope fa-lg"></i>: <a
-                                href="mailto:autogarageservices177@gmail.com">autoga...@gmail</a>
-                        </address>
-                    </div>
-                    <div class="col-12 col-sm-4 align-self-center">
-                        <div class="text-center">
-                            <a class="btn btn-social-icon btn-facebook"
-                                href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
-                            <a class="btn btn-social-icon btn-whatsapp" href="https://wa.me/212662107878"><i
-                                    class="fa fa-linkedin fa-lg"></i></a>
-                            <a class="btn btn-social-icon btn-email" href="mailto:autogarageservices177@gmail.com"><i
-                                    class="fa fa-envelope fa-lg"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <p>© Copyright 2020 Auto Garage Services</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- build:js js/main.js -->
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
-        <!-- endbuild -->
-
+<!-- build:js js/main.js -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<!-- endbuild -->
 
 
 </body>

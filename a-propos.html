@@ -1,62 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="initial-scale = 1.0, shrink-to-fit=no, maximum-scale = 1.0" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- endbuild-->
-
-
-
-
-    <title>Ristorante Con Fusion: About Us</title>
-
+    <title>Auto Garage Services | A Propos</title>
 </head>
 
 <body>
     <section id="header">
-        <nav class="navbar navbar-expand-sm fixed-top">
-            <a class="navbar-brand" href="#"><span><i class="fa fa-car mr-2"></i></span>Auto Garage Services</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="#"><i class="fa fa-car mr-2"></i>Auto Garage Services</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarAltMarkup"
+                aria-controls="navbarAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto align-items-center">
+            <div class="collapse navbar-collapse" id="navbarAltMarkup">
+                <ul class="navbar-nav mx-auto text-center">
                     <li class="nav-item"><a class="nav-link" href="./index.html"><span
                                 class="fa fa-home fa-lg mr-1"></span>Acceuil<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active"><a class="nav-link" href="./a-propos.html"><span
+                    <li class="nav-item"><a class="nav-link" href="./a-propos.html"><span
                                 class="fa fa-info fa-lg mr-1 "></span>A Propos</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="./contactez-nous.html"><span class="fa fa-address-card fa-lg mr-1"></span>Contactez-Nous</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="https://wa.me/212662107878"><span
-                                class="fa fa-whatsapp fa-lg mr-1"></span>Whatsapp</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tel:+212537630649"><span
-                                class="fa fa-phone mr-1"></span>Téléphone</a></li>
                 </ul>
             </div>
         </nav>
     </section>
 
-    <div class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-6">
-                    <h1 class="display-4">Auto Garage Services</h1>
-                    <p class="lead">A la poursuite d'exellence, nous sommes
-                        votre meilleure alternative à la maison mère! Meilleurs services, meilleure qualité,
-                        et meilleurs prix.</p>
+    <div class="jumbotron text-center mb-0">
+
+    </div>
+    <button id="covidButton" type="button" class="btn btn-outline-warning mt-0 text-left col-12 active"
+        data-toggle="modal" data-target="#myModal">
+        <i class="fa fa-exclamation-triangle fa-sm mr-1"></i>Covid-19 - Votre santé et securité sont notre priorité. En
+        savoir plus sur nos mesures impécables...
+    </button>
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Notice Covid-19</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>Nous prenons votre santé et securité et celle de nos employées très au serieux!</p>
+                    <p>Toutes les précautions sanitaires sont prises pour respecter <a
+                            href="https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public">
+                            les consignes de l'Organization Mondiale de la Santé</a>. Le port du masque et la
+                        distansassion sont obligatoires.</p>
+                    <p>Prenez avantage de nos services de <strong>diagnostic à distance gratuit</strong> pour minimiser
+                        le plus possible le contact direct et profitez de notre <strong>service voiturier</strong>, pour
+                        eviter la foule.</p>
+                    <p>Toutes les surfaces interne de nos voitures sont désinfectés et l'interieur aéré avant la
+                        livraison!</p>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -72,21 +83,31 @@
         <div class="row row-content">
             <div class="col-12 col-sm-6">
                 <h2>Notre Histoire</h2>
-                <p>Depuis sa création en 1995 comme plan de retraite pour Si Mohammed El Ouaqid, Auto Garage Service
-                    a été dans une quête incessante de perfection, une qualité innée à son fondateur et qui contribue en
-                    grande partie à la satisfaction de sa clientèle.</p>
-                <p>Né en 1941, Si Mohammed a toujours été passionné de voitures, de bricolage et de mechanique. Dès son
-                    plus jeune âge, Si Mohammad a aidé ses amis à réparer
-                    et à optimiser leurs motos et voitures. Si Mohammad a non seulement été en formation continue depuis
-                    ce temps là, celà lui a aussi permit de financier sa scolarité.
-                    <p />
+                <p>Depuis sa création en 1995 par Mr Si Mohammed El Ouaqid, Auto Garage Service est dans une quête
+                    incessante de perfection. L'accomplissement et le serieux étant des qualités innées dont est doté le
+                    patron de cette petite entreprise.</p>
+                <p>
+                    Né en 1941, Si Mohammed est un passionné de voitures et de travaux manuels. Sollicité depuis son
+                    plus jeune âge par sa famille
+                    et ses amis pour son don de réparer et d'optimiser motos et voitures, il a poursuivi et a obtenu son
+                    diplôme de méchanique à
+                    l'âge de 22 ans.
+                </p>
+                <p>
+                    Son ingéniosité lui a permit de poursuivre une brillante carrière au Bureau de
+                    Recherche et de Participation Miniere (Le BRPM). Apres sa retraite et en 1995, il revient tout
+                    naturellement
+                    vers sa passion première, la mécanique.
+                </p>
+                <p>
+                    Depuis ce temps, Auto Garage Services a reçu plusieurs certificats d'appréciation issuent par la
+                    chambre de l'industrie artisanale,
+                    pour les efforts fournis pour promouvoir l'art et l'artisanat marocain mais la plus grande
+                    reconnaissance est celle de nos clients fideles
+                    et qui nous ont aidé au fil des années de bouche a oreille a continuer de raffiner notre art.
 
-                <p>Né en 1941, Si Mohammed a acquis son premier diplôme de mécanicien à
-                    l’âge de 22 ans. Étant le premier de sa famille à acquérir une formation supérieure, Mohammed a
-                    poursuivi une carrière en tant qu'ingénieur et Chef de Service au Bureau de Recherche et de
-                    Participation Minière (BRPM). Cependant, et tout au long de sa carrière au BRPM, le genie et le talent
-                    de Si Mohammed n'ont pas cessés d'etre fortement sollicités. Entre les amis, la famille et le bouche à oreille, Si Mohammad a continué 
-                    à faire des clients heureux et satisfaits et en fondant Auto Garage Service il y a maintenant plus de 25 ans.</p>
+
+                </p>
 
             </div>
             <div>
@@ -104,13 +125,12 @@
                         <ul class="list-unstyled">
                             <li><a href="./index.html">Acceuil</a></li>
                             <li><a href="/a-propos.html">A Propos</a></li>
-                            <li><a href="./contactez-nous.html">Contactez-Nous</a></li>
+
                         </ul>
                     </div>
                     <div class="col-7 col-sm-5">
                         <h5>Notre Adresse</h5>
                         <address>
-
                             177 rue iksi Nahda lll<br>
                             Rabat, Maroc<br>
                             <i class="fa fa-phone fa-lg mr-2"></i>:+212 537 63 06 49<br>
@@ -125,7 +145,7 @@
                             <a class="btn btn-social-icon btn-facebook"
                                 href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
                             <a class="btn btn-social-icon btn-whatsapp" href="https://wa.me/212662107878"><i
-                                    class="fa fa-linkedin fa-lg"></i></a>
+                                    class="fa fa-whatsapp fa-lg"></i></a>
                             <a class="btn btn-social-icon btn-email" href="mailto:autogarageservices177@gmail.com"><i
                                     class="fa fa-envelope fa-lg"></i></a>
                         </div>
