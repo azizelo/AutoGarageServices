@@ -16,7 +16,7 @@
 
 <body>
     <section id="header">
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav id="aboutNav" class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#"><i class="fa fa-car mr-2"></i>Auto Garage Services</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarAltMarkup"
                 aria-controls="navbarAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,15 +30,27 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="./a-propos.html"><span
                                 class="fa fa-info fa-lg mr-1 "></span>A Propos</a></li>
+                    <li class="nav-item "><a class="nav-link" href="https://wa.me/212662107878"><span
+                                class="fa fa-whatsapp fa-lg mr-1"></span>Whatsapp</a></li>
+                    <li class="nav-item "><a class="nav-link" href="tel:+212537630649"><span
+                                class="fa fa-phone mr-1"></span>Téléphone</a></li>
                 </ul>
             </div>
         </nav>
     </section>
+    
+    
 
-    <div class="jumbotron text-center mb-0">
+    <div class="container">
 
-    </div>
-    <button id="covidButton" type="button" class="btn btn-outline-warning mt-0 text-left col-12 active"
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="./index.html">Acceuil</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="#">A Propos</a></li>
+            </ol>
+        </nav>
+
+        <button id="covidButton" type="button" class="btn btn-outline-warning mt-0 text-left col-12 active"
         data-toggle="modal" data-target="#myModal">
         <i class="fa fa-exclamation-triangle fa-sm mr-1"></i>Covid-19 - Votre santé et securité sont notre priorité. En
         savoir plus sur nos mesures impécables...
@@ -56,65 +68,58 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <p>Nous prenons votre santé et securité et celle de nos employées très au serieux!</p>
+                    <p>Nous prenons votre santé et sécurité et celles de nos employés très au sérieux!</p>
                     <p>Toutes les précautions sanitaires sont prises pour respecter <a
                             href="https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public">
-                            les consignes de l'Organization Mondiale de la Santé</a>. Le port du masque et la
-                        distansassion sont obligatoires.</p>
-                    <p>Prenez avantage de nos services de <strong>diagnostic à distance gratuit</strong> pour minimiser
-                        le plus possible le contact direct et profitez de notre <strong>service voiturier</strong>, pour
-                        eviter la foule.</p>
-                    <p>Toutes les surfaces interne de nos voitures sont désinfectés et l'interieur aéré avant la
-                        livraison!</p>
+                            les consignes de l'Organisation Mondiale de la Santé</a>. Le port du masque et la
+                        distanciation sont obligatoires.</p>
+                    <p>Profitez de nos services de diagnostic à distance gratuit et de notre service voiturier pour 
+                        minimiser le plus possible les contacts directs.</p>
+                    <p>Les surfaces internes des voitures sont désinfectées et l'habitacle aéré avant toute livraison.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
-
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="./index.html">Acceuil</a></li>
-                <li class="breadcrumb-item active" aria-current="page"><a href="#">A Propos</a></li>
-            </ol>
-        </nav>
-
-        <div class="row row-content">
-            <div class="col-12 col-sm-6">
-                <h2>Notre Histoire</h2>
-                <p>Depuis sa création en 1995 par Mr Si Mohammed El Ouaqid, Auto Garage Service est dans une quête
-                    incessante de perfection. L'accomplissement et le serieux étant des qualités innées dont est doté le
-                    patron de cette petite entreprise.</p>
-                <p>
-                    Né en 1941, Si Mohammed est un passionné de voitures et de travaux manuels. Sollicité depuis son
-                    plus jeune âge par sa famille
-                    et ses amis pour son don de réparer et d'optimiser motos et voitures, il a poursuivi et a obtenu son
-                    diplôme de méchanique à
-                    l'âge de 22 ans.
-                </p>
-                <p>
-                    Son ingéniosité lui a permit de poursuivre une brillante carrière au Bureau de
-                    Recherche et de Participation Miniere (Le BRPM). Apres sa retraite et en 1995, il revient tout
-                    naturellement
-                    vers sa passion première, la mécanique.
-                </p>
-                <p>
-                    Depuis ce temps, Auto Garage Services a reçu plusieurs certificats d'appréciation issuent par la
-                    chambre de l'industrie artisanale,
-                    pour les efforts fournis pour promouvoir l'art et l'artisanat marocain mais la plus grande
-                    reconnaissance est celle de nos clients fideles
-                    et qui nous ont aidé au fil des années de bouche a oreille a continuer de raffiner notre art.
 
 
-                </p>
-
+            <div class="aboutus-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                        <div class="col-md-4 col-sm-6 col-xs-12">    
+                            <div class="aboutus-image float-left hidden-sm"><img src="./img/mecanicien-automobile-examen_1170-1686.jpg" alt=""></div>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-xs-12">
+                            <div class="aboutus-content ">
+                                <h1>Notre <span>Histoire</span></h1>
+                                <h4>La Mechanique est Notre Passion</h4>
+                                <p>Depuis sa création en 1995 par Mr Si Mohammed El Ouaqid, Auto Garage Service est dans une quête
+                                    incessante de perfection. L'accomplissement et le serieux étant des qualités innées dont est doté le
+                                    patron de cette petite entreprise.</p>
+                                <p>
+                                    Né en 1941, Si Mohammed est un passionné de voitures et de travaux manuels. Sollicité depuis son
+                                    plus jeune âge par sa famille
+                                    et ses amis pour son don de réparer et d'optimiser motos et voitures, il a poursuivi et a obtenu son
+                                    diplôme de méchanique à l'âge de 22 ans.
+                                </p>
+                                <p>
+                                    Son ingéniosité lui a permit de poursuivre une brillante carrière au Bureau de
+                                    Recherche et de Participation Minière (Le BRPM). Après une retraite anticipée et bien mérité en 1995, il revient tout
+                                    naturellement vers sa passion première, la mécanique.
+                                </p>
+                                <p>
+                                    Depuis ce temps, Auto Garage Services a reçu plusieurs certificats d'appréciation issuent par la
+                                    chambre de l'industrie artisanale, pour les efforts fournis pour promouvoir l'art et l'artisanat marocain.  Cependant, la plus grande
+                                    reconnaissance est celle de nos clients fidèles, maintenant amis, qui au fil des années et de bouches à oreilles, ont aidé a battire 
+                                    la renomée de notre petite entreprise: une renomée d'un travail honnête, ponctuel et de qualité.
+                                </p>
+                                
+                            </div>
+                        </div>    
+                    </div>
+                </div>
             </div>
-            <div>
-            </div>
-        </div>
-
-
 
 
         <footer class="footer">
@@ -131,8 +136,8 @@
                     <div class="col-7 col-sm-5">
                         <h5>Notre Adresse</h5>
                         <address>
-                            177 rue iksi Nahda lll<br>
-                            Rabat, Maroc<br>
+                            <a href="https://goo.gl/maps/QqG6fiSgC2Trs3gU8">177, Rue Iksi, Hay Nahda lll</a> <br>
+                            <a href="https://goo.gl/maps/QqG6fiSgC2Trs3gU8">Rabat, Maroc</a><br>
                             <i class="fa fa-phone fa-lg mr-2"></i>:+212 537 63 06 49<br>
                             <i class="fa fa-whatsapp fa-lg mr-2"></i>:<a href="https://wa.me/212662107878">+212 662 10
                                 78 78</a><br>
@@ -151,6 +156,7 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 <div class="row justify-content-center">
                     <div class="col-auto">
                         <p>© Copyright 2020 Auto Garage Services</p>

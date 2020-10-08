@@ -54,6 +54,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     border: none;
+    margin-bottom: 0;
 }
 
 .modal-content{
@@ -61,13 +62,20 @@
     color: chartreuse;
 
 }
+.row-content {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
 
 body{
-    background-color: rgba($color: #fee970, $alpha: 0.2);;
+    background-color: rgba($color: #fee970, $alpha: 0.2);
+
 }
 
 #testimonials {
-    height: 200px;
+    height: 125px;
+    padding-top: 0;
+    margin: 0px;
 }
 
 .footer {
@@ -75,6 +83,60 @@ body{
     padding: 10px;
     background-color: rgba($color: #dae8ec, $alpha: 1);
 }
+
+#aboutNav{
+    background-color: darkblue;
+}
+
+.aboutus-area {
+    padding-top:120px;
+     padding-bottom:120px;
+}
+/*-- aboutus Image --*/
+.aboutus-image {
+  margin-right: 52px;
+  width: 318px; }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .aboutus-image {
+      margin-right: 35px;
+      width: 345px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .aboutus-image {
+      margin-bottom: 30px;
+      float: none; } }
+  @media only screen and (max-width: 767px) {
+    .aboutus-image {
+      margin-bottom: 30px;
+      margin-right: 0;
+      float: none;
+      width: auto; } }
+  .aboutus-image img {
+    width: 100%; }
+
+/*-- aboutus Content --*/
+.aboutus-content h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 40px;
+  margin-bottom: 2px; }
+  @media only screen and (max-width: 479px) {
+    .aboutus-content h1 {
+      color: rgb(7, 7, 155);
+      font-size: 30px;
+      line-height: 30px; } }
+  .aboutus-content h1 span {
+    color: chartreuse; }
+
+.aboutus-content h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #9b9b9b;
+  margin-bottom: 23px; }
+
+.aboutus-content p {
+  font-size: 16px;
+  line-height: 27px; }
+
 /* .jumbotron {
   position: relative;
   background:none;
