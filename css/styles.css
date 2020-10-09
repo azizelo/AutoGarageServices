@@ -1,6 +1,10 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px; }
+
+.navbar {
+  background: rgba(5, 2, 34, 0.4); }
 
 .jumbotron {
   position: relative;
@@ -8,32 +12,35 @@
   height: 80vh;
   background-size: cover;
   background-position: center;
-  color: chartreuse;
+  color: #FFFD37;
   border-radius: 0px !important; }
 
 .jumbotron h1 {
-  margin: 30px 0; }
+  margin: 20px 0; }
 
 .intro {
   margin-top: 18vh;
-  padding-top: 5px;
-  height: 320px;
-  background: rgba(5, 2, 34, 0.4); }
+  padding: 15px;
+  background: rgba(5, 2, 34, 0.6); }
+
+.intro .btn {
+  color: #FFFD37;
+  border-color: #FFFD37; }
 
 .navbar a {
-  color: chartreuse; }
+  color: #FFFD37; }
 
 .navbar-nav a {
   margin: 0 20px; }
 
 .navbar-toggler {
-  color: chartreuse;
+  color: #FFFD37;
   border: none;
   outline: none; }
 
 .nav-link:hover {
   font-weight: 600;
-  border-bottom: 1px solid chartreuse;
+  border-bottom: 1px solid #FFFD37;
   margin-bottom: -1px; }
 
 #covidButton {
@@ -44,7 +51,7 @@
   margin-bottom: 0; }
 
 .modal-content {
-  background: rgba(5, 2, 34, 0.8);
+  background: rgba(5, 2, 34, 0.9);
   color: chartreuse; }
 
 .row-content {
@@ -59,13 +66,16 @@ body {
   padding-top: 0;
   margin: 0px; }
 
+blockquote {
+  border: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: -30px;
+  quotes: "“" "”" "‘" "’"; }
+
 .footer {
   margin-top: 5px;
   padding: 10px;
   background-color: #dae8ec; }
-
-#aboutNav {
-  background-color: darkblue; }
 
 .aboutus-area {
   padding-top: 120px;
@@ -121,6 +131,49 @@ body {
 .aboutus-content p {
   font-size: 16px;
   line-height: 27px; }
+
+.service-7 h1, .service-7 h2, .service-7 h3, .service-7 h4, .service-7 h5, .service-7 h6 {
+  color: #3e4555; }
+
+.service-7 .font-weight-medium {
+  font-weight: 500; }
+
+.service-7 a {
+  text-decoration: none; }
+
+.service-7 .linking {
+  color: #3e4555; }
+
+.service-7 .linking:hover {
+  color: #316ce8; }
+
+.service-7 .subtitle {
+  color: #8d97ad;
+  line-height: 24px; }
+
+.service-7 .btn-info-gradiant {
+  background: #188ef4;
+  background: -webkit-linear-gradient(legacy-direction(to right), #188ef4 0%, #316ce8 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#188ef4), to(#316ce8));
+  background: -webkit-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+  background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+  background: linear-gradient(to right, #188ef4 0%, #316ce8 100%); }
+
+.service-7 .btn-info-gradiant:hover {
+  background: #316ce8;
+  background: -webkit-linear-gradient(legacy-direction(to right), #316ce8 0%, #188ef4 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#316ce8), to(#188ef4));
+  background: -webkit-linear-gradient(left, #316ce8 0%, #188ef4 100%);
+  background: -o-linear-gradient(left, #316ce8 0%, #188ef4 100%);
+  background: linear-gradient(to right, #316ce8 0%, #188ef4 100%); }
+
+.service-7 .btn-md {
+  padding: 15px 45px;
+  font-size: 16px; }
+
+.card {
+  background-color: rgba(254, 233, 112, 0.2);
+  border: none; }
 
 /* .jumbotron {
   position: relative;

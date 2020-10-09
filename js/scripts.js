@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-    $('#mycarousel').carousel({ interval: 10000 });
+    $('#mycarousel').carousel({ interval: 8000 });
 
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
