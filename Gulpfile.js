@@ -10,8 +10,8 @@ var gulp = require('gulp'),
     rev = require('gulp-rev'),
     cleanCss = require('gulp-clean-css'),
     flatmap = require('gulp-flatmap'),
-    htmlmin = require('gulp-htmlmin'),
-    deploy = require('gulp-gh-pages');
+    htmlmin = require('gulp-htmlmin');
+
 
 
 gulp.task('sass', function(){
@@ -59,10 +59,7 @@ gulp.task('imagemin', function(){
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('deploy', function() {
-    return gulp.src("./dist/**/*")
-    .pipe(deploy())
-});
+
 
 
 
