@@ -10,7 +10,9 @@ var gulp = require('gulp'),
     rev = require('gulp-rev'),
     cleanCss = require('gulp-clean-css'),
     flatmap = require('gulp-flatmap'),
-    htmlmin = require('gulp-htmlmin');
+    htmlmin = require('gulp-htmlmin'),
+    deploy = require('gulp-gh-pages');
+
 
 gulp.task('sass', function(){
     return gulp.src('./css/*.scss')
@@ -55,6 +57,11 @@ gulp.task('imagemin', function(){
         .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true}
             ))
         .pipe(gulp.dest('dist/img'));
+});
+
+gulp.task('deploy', function() {
+    return gulp.src("./dist/**/*")
+    .pipe(deploy())
 });
 
 
