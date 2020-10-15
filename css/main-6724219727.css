@@ -158,7 +158,6 @@
 .btn-yahoo.disabled:hover,.btn-yahoo[disabled]:hover,fieldset[disabled] .btn-yahoo:hover,.btn-yahoo.disabled:focus,.btn-yahoo[disabled]:focus,fieldset[disabled] .btn-yahoo:focus,.btn-yahoo.disabled.focus,.btn-yahoo[disabled].focus,fieldset[disabled] .btn-yahoo.focus{background-color:#720e9e;border-color:rgba(0,0,0,0.2)}
 .btn-yahoo .badge{color:#720e9e;background-color:#fff}
 
-@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px; }
@@ -179,7 +178,7 @@
   margin: 20px 0; }
 
 .intro {
-  margin-top: 18vh;
+  margin-top: 25vh;
   padding: 15px;
   background: rgba(5, 2, 34, 0.6); }
 
@@ -225,12 +224,6 @@ body {
   height: 125px;
   padding-top: 0;
   margin: 0px; }
-
-blockquote {
-  border: none;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  margin-bottom: -30px;
-  quotes: "“" "”" "‘" "’"; }
 
 .footer {
   margin-top: 5px;
@@ -332,7 +325,6 @@ blockquote {
   font-size: 16px; }
 
 .card {
-  background-color: rgba(254, 233, 112, 0.2);
   border: none; }
 
 /* .jumbotron {
