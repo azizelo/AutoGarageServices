@@ -52,6 +52,13 @@ gulp.task('copyfonts', function(){
 
 });
 
+//copy files
+gulp.task('copymisc', function(){
+    return gulp.src('./*.{vcf}*')
+    .pipe(gulp.dest('./dist'));
+
+});
+
 gulp.task('imagemin', function(){
     return gulp.src('img/*.{png,jpg,gif}')
         .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true}
@@ -77,6 +84,6 @@ gulp.task('usemin', function (){
     }))
     .pipe(gulp.dest('dist/'));
 });
-gulp.task('build', gulp.series('clean','copyfonts','imagemin','usemin'));
+gulp.task('build', gulp.series('clean','copyfonts', 'copymisc','imagemin','usemin'));
 
 gulp.task('default', gulp.parallel('browser-sync','sass:watch'));
