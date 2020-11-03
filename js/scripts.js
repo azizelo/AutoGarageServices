@@ -13,6 +13,15 @@ $(document).ready(function () {
         gtag('event', 'WhatsAppChat');
     });
 
+    $('#contactButton').on('click',  function() {
+        gtag('event', 'ContactSaved');
+    });
+
+    $('#covidButton').on('click',  function() {
+        gtag('event', 'CovidNoticeRead');
+    });
+
+
 
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
