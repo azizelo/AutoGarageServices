@@ -220,10 +220,8 @@
 body {
   background-color: rgba(254, 233, 112, 0.2); }
 
-#testimonials {
-  height: 140px;
-  padding-top: 0;
-  margin: 0px; }
+.testimonials {
+  height: 300px; }
 
 .footer {
   margin-top: 5px;
@@ -325,4 +323,16 @@ body {
   font-size: 16px; }
 
 .card {
+  margin-top: 50px;
+  margin-bottom: 50px;
   border: none; }
+
+#contactButton {
+  margin: 50px; }
+
+.carousel {
+  margin-top: 30px;
+  margin-bottom: 50px; }
+
+#myCarousel {
+  padding-bottom: 50px; }
