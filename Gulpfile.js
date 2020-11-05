@@ -52,9 +52,16 @@ gulp.task('copyfonts', function(){
 
 });
 
-//copy files
-gulp.task('copymisc', function(){
-    return gulp.src('./*.{vcf}*')
+//copy contact card
+gulp.task('copyvcf', function(){
+    return gulp.src('./AutoGarageServices.vcf')
+    .pipe(gulp.dest('./dist'));
+
+});
+
+//copy CNAME File
+gulp.task('copycname', function(){
+    return gulp.src('./CNAME')
     .pipe(gulp.dest('./dist'));
 
 });
@@ -84,6 +91,6 @@ gulp.task('usemin', function (){
     }))
     .pipe(gulp.dest('dist/'));
 });
-gulp.task('build', gulp.series('clean','copyfonts', 'copymisc','imagemin','usemin'));
+gulp.task('build', gulp.series('clean','copyfonts', 'copyvcf', 'copycname','imagemin','usemin'));
 
 gulp.task('default', gulp.parallel('browser-sync','sass:watch'));
