@@ -97,46 +97,45 @@ gulp.task('copycname', function(){
 });
 
 gulp.task('imagemin', async function(){
-    if (!imagemin) {
-        imagemin = (await import('gulp-imagemin')).default;
+    // Use sharp for JPEG/PNG optimization and WebP generation to avoid transitive
+    // vulnerabilities in the imagemin binary-download toolchain. This task will
+    // only re-process images when the source is newer than the destination.
+    const sharp = require('sharp');
+    const path = require('path');
+    const srcDir = 'img';
+    const distDir = 'dist/img';
+    await fs.promises.mkdir(distDir, { recursive: true });
+
+    const files = (await fs.promises.readdir(srcDir)).filter(f => /\.(png|jpe?g|gif|svg)$/i.test(f));
+    for (const f of files) {
+        const inPath = path.join(srcDir, f);
+        const ext = path.extname(f).toLowerCase();
+        const base = path.basename(f, ext);
+        const outPath = path.join(distDir, f);
+        try {
+            const srcStat = await fs.promises.stat(inPath);
+            const destStat = await fs.promises.stat(outPath).catch(() => null);
+            if (destStat && destStat.mtimeMs >= srcStat.mtimeMs) {
+                // destination is up-to-date
+                continue;
+            }
+
+            if (ext === '.jpg' || ext === '.jpeg') {
+                await sharp(inPath).jpeg({ quality: 82, mozjpeg: true }).toFile(outPath);
+                // webp
+                await sharp(inPath).webp({ quality: 75 }).toFile(path.join(distDir, `${base}.webp`));
+            } else if (ext === '.png') {
+                await sharp(inPath).png({ compressionLevel: 9 }).toFile(outPath);
+                await sharp(inPath).webp({ quality: 75 }).toFile(path.join(distDir, `${base}.webp`));
+            } else {
+                // gif/svg or others — copy verbatim
+                await fs.promises.copyFile(inPath, outPath);
+            }
+        } catch (err) {
+            // ignore single-file errors but log to console for visibility
+            console.error('imagemin(sharp) error for', f, err && err.message);
+        }
     }
-    // dynamically import imagemin plugins (ESM) and gulp-rename
-    const [mozjpegMod, pngquantMod, gifsicleMod, webpMod, renameMod] = await Promise.all([
-        import('imagemin-mozjpeg'),
-        import('imagemin-pngquant'),
-        import('imagemin-gifsicle'),
-        import('imagemin-webp'),
-        import('gulp-rename')
-    ]);
-    const mozjpeg = mozjpegMod.default || mozjpegMod;
-    const pngquant = pngquantMod.default || pngquantMod;
-    const gifsicle = gifsicleMod.default || gifsicleMod;
-    const webp = webpMod.default || webpMod;
-    const rename = renameMod.default || renameMod;
-
-    // Optimize originals with tuned options for quality/size balance
-    const optimizePlugins = [
-        mozjpeg({quality: 82, progressive: true}),
-        pngquant({quality: [0.7, 0.85]}),
-        gifsicle({optimizationLevel: 2})
-    ];
-
-    // Stream: optimize originals (only process files that changed since last build)
-    const optimized = gulp.src('img/*.{png,jpg,jpeg,gif,svg}')
-        .pipe(newer('dist/img'))
-        .pipe(imagemin(optimizePlugins))
-        .pipe(gulp.dest('dist/img'));
-
-    // Additionally generate WebP versions for browsers that support it
-    const webps = gulp.src('img/*.{png,jpg,jpeg}')
-        .pipe(newer({dest: 'dist/img', ext: '.webp'}))
-        .pipe(imagemin([ webp({quality: 75}) ]))
-        .pipe(rename({ extname: '.webp' }))
-        .pipe(gulp.dest('dist/img'));
-
-    // wait for streams to finish before post-processing
-    const streamToPromise = s => new Promise((resolve, reject) => s.on('end', resolve).on('error', reject));
-    await Promise.all([streamToPromise(optimized), streamToPromise(webps)]);
 
     // After optimization, ensure we never keep an optimized file larger than the original.
     await ensureOptimizedIsSmaller();
