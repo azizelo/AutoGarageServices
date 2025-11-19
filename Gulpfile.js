@@ -154,6 +154,27 @@ gulp.task('usemin', function (){
     .pipe(gulp.dest('dist/'));
 });
 // Build: ensure fonts are copied (unmodified) before image tasks/usemin
-gulp.task('build', gulp.series('clean', 'copyfonts', 'copyvcf', 'copycname', 'imagemin', 'usemin'));
+// Replace known font query version tokens in built CSS with a timestamped token
+// to force browsers to re-fetch fonts after a deploy (cache-bust).
+gulp.task('bust-font-cache', async function(){
+    const cssDir = 'dist/css';
+    const token = Date.now();
+    try{
+        const files = await fs.promises.readdir(cssDir);
+        const cssFiles = files.filter(f => f.endsWith('.css'));
+        for(const f of cssFiles){
+            const p = `${cssDir}/${f}`;
+            let content = await fs.promises.readFile(p, 'utf8');
+            // Replace the FontAwesome v token (e.g. ?v=4.7.0) with a timestamped variant
+            content = content.replace(/(fontawesome-webfont\.(?:eot|woff2|woff|ttf|svg)\?v=)([0-9\.\-a-zA-Z_]+)/g, `$1$2.${token}`);
+            await fs.promises.writeFile(p, content, 'utf8');
+        }
+    }catch(e){
+        // ignore if dist/css missing
+    }
+    return Promise.resolve();
+});
+
+gulp.task('build', gulp.series('clean', 'copyfonts', 'copyvcf', 'copycname', 'imagemin', 'usemin', 'bust-font-cache'));
 
 gulp.task('default', gulp.parallel('browser-sync','sass:watch'));
