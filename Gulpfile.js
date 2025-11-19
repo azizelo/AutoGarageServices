@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass')(require('sass')),
     browserSync = require('browser-sync'),
     del = require('del'),
-    imagemin = require('gulp-imagemin'),
+    imagemin = null,
     uglify = require('gulp-uglify'),
     usemin = require('gulp-usemin'),
     rev = require('gulp-rev'),
@@ -66,10 +66,12 @@ gulp.task('copycname', function(){
 
 });
 
-gulp.task('imagemin', function(){
+gulp.task('imagemin', async function(){
+    if (!imagemin) {
+        imagemin = (await import('gulp-imagemin')).default;
+    }
     return gulp.src('img/*.{png,jpg,gif}')
-        .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true}
-            ))
+        .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
         .pipe(gulp.dest('dist/img'));
 });
 
