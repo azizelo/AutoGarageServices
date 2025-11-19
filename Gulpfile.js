@@ -11,6 +11,7 @@ var gulp = require('gulp'),
     rev = require('gulp-rev'),
     cleanCss = require('gulp-clean-css'),
     flatmap = require('gulp-flatmap'),
+    newer = require('gulp-newer'),
     { minify: htmlMinify } = require('html-minifier-terser'),
     through = require('through2');
 
@@ -120,13 +121,15 @@ gulp.task('imagemin', async function(){
         gifsicle({optimizationLevel: 2})
     ];
 
-    // Stream: optimize originals
+    // Stream: optimize originals (only process files that changed since last build)
     const optimized = gulp.src('img/*.{png,jpg,jpeg,gif,svg}')
+        .pipe(newer('dist/img'))
         .pipe(imagemin(optimizePlugins))
         .pipe(gulp.dest('dist/img'));
 
     // Additionally generate WebP versions for browsers that support it
     const webps = gulp.src('img/*.{png,jpg,jpeg}')
+        .pipe(newer({dest: 'dist/img', ext: '.webp'}))
         .pipe(imagemin([ webp({quality: 75}) ]))
         .pipe(rename({ extname: '.webp' }))
         .pipe(gulp.dest('dist/img'));

@@ -16,6 +16,7 @@
     "gulp-flatmap": "^1.0.2",
     "html-minifier-terser": "^7.0.0",
     "through2": "^4.0.2",
+    "gulp-newer": "^1.4.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-rename": "^2.0.0",
     "gulp-rev": "^9.0.0",
