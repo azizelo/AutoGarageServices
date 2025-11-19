@@ -11,7 +11,31 @@ var gulp = require('gulp'),
     rev = require('gulp-rev'),
     cleanCss = require('gulp-clean-css'),
     flatmap = require('gulp-flatmap'),
-    htmlmin = require('gulp-htmlmin');
+    { minify: htmlMinify } = require('html-minifier-terser'),
+    through = require('through2');
+
+// Small wrapper to provide a gulp-like htmlmin stream API using html-minifier-terser
+function htmlmin(opts){
+    return through.obj(function(file, enc, cb){
+        if (file.isBuffer()){
+            htmlMinify(String(file.contents), opts).then(minified => {
+                file.contents = Buffer.from(minified);
+                cb(null, file);
+            }).catch(cb);
+        } else if (file.isStream()){
+            let data = '';
+            file.contents.on('data', chunk => data += chunk);
+            file.contents.on('end', () => {
+                htmlMinify(data, opts).then(minified => {
+                    file.contents = Buffer.from(minified);
+                    cb(null, file);
+                }).catch(cb);
+            });
+        } else {
+            cb(null, file);
+        }
+    });
+}
 
 
 
