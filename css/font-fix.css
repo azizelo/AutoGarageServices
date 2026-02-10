@@ -1,7 +1,7 @@
 /* Ensure FontAwesome fonts have font-display:swap to reduce invisible icon time */
 @font-face{
   font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.woff2') format('woff2');
+  src: url('../fonts/fontawesome-webfont.v20260210-2.woff2') format('woff2'), url('../fonts/fontawesome-webfont.v20260210-2.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
