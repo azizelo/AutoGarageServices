@@ -1,0 +1,8 @@
+/* Ensure FontAwesome fonts have font-display:swap to reduce invisible icon time */
+@font-face{
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
