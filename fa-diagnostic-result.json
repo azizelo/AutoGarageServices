@@ -1,0 +1,43 @@
+{
+  "url": "https://autogarageservices.ma/?_bust=1",
+  "screenshotPath": "fa-diagnostic-https_autogarageservicesma__bust1.png",
+  "fontResources": [
+    {
+      "name": "https://autogarageservices.ma/fonts/fontawesome-webfont.v20260210-2.woff2",
+      "type": "link",
+      "status": 200,
+      "transferSize": 139900
+    },
+    {
+      "name": "https://autogarageservices.ma/fonts/fontawesome-webfont.v20260210-2.woff",
+      "type": "css",
+      "status": 200,
+      "transferSize": 177823
+    },
+    {
+      "name": "https://autogarageservices.ma/fonts/fontawesome-webfont.v20260210-2.ttf",
+      "type": "css",
+      "status": 200,
+      "transferSize": 93171
+    }
+  ],
+  "sample": {
+    "found": true,
+    "outer": "<i class=\"fa fa-car mr-2\"></i>",
+    "computed": "FontAwesome",
+    "before": "\"\"",
+    "after": "none",
+    "innerHTML": ""
+  },
+  "stylesheets": [
+    {
+      "href": "https://autogarageservices.ma/css/main-1ac6e84880.css",
+      "rulesCount": 1711
+    }
+  ],
+  "faRuleFound": {
+    "href": "https://autogarageservices.ma/css/main-1ac6e84880.css",
+    "selector": ".fade",
+    "css": ".fade { transition: opacity 0.15s linear; }"
+  }
+}

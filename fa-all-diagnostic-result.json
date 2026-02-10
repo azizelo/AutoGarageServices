@@ -1,0 +1,304 @@
+{
+  "url": "https://autogarageservices.ma/?_bust=1",
+  "screenshotPath": "fa-all-diagnostic-https_autogarageservicesma__bust1.png",
+  "fontResources": [
+    {
+      "name": "https://autogarageservices.ma/fonts/fontawesome-webfont.v20260210-2.woff2",
+      "type": "link",
+      "status": 200,
+      "transferSize": 139900
+    },
+    {
+      "name": "https://autogarageservices.ma/fonts/fontawesome-webfont.v20260210-2.woff",
+      "type": "css",
+      "status": 200,
+      "transferSize": 177823
+    },
+    {
+      "name": "https://autogarageservices.ma/fonts/fontawesome-webfont.v20260210-2.ttf",
+      "type": "css",
+      "status": 200,
+      "transferSize": 93171
+    }
+  ],
+  "iconsCount": 25,
+  "iconsWithBefore": 19,
+  "iconsWithoutBefore": 6,
+  "icons": [
+    {
+      "index": 0,
+      "outer": "<i class=\"fa fa-car mr-2\"></i>",
+      "className": "fa fa-car mr-2",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": true,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "outer": "<i class=\"fa fa-bars\"></i>",
+      "className": "fa fa-bars",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": false,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "outer": "<span class=\"fa fa-home fa-lg mr-1\"></span>",
+      "className": "fa fa-home fa-lg mr-1",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": true,
+      "text": ""
+    },
+    {
+      "index": 3,
+      "outer": "<span class=\"fa fa-info fa-lg mr-1\"></span>",
+      "className": "fa fa-info fa-lg mr-1",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": true,
+      "text": ""
+    },
+    {
+      "index": 4,
+      "outer": "<span class=\"fa fa-whatsapp fa-lg mr-1\"></span>",
+      "className": "fa fa-whatsapp fa-lg mr-1",
+      "computed": "FontAwesome",
+      "before": "none",
+      "after": "none",
+      "dispBefore": false,
+      "visible": false,
+      "text": ""
+    },
+    {
+      "index": 5,
+      "outer": "<span class=\"fa fa-phone mr-1\"></span>",
+      "className": "fa fa-phone mr-1",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": true,
+      "text": ""
+    },
+    {
+      "index": 6,
+      "outer": "<span class=\"fa fa-whatsapp fa-lg mr-1\"></span>",
+      "className": "fa fa-whatsapp fa-lg mr-1",
+      "computed": "FontAwesome",
+      "before": "none",
+      "after": "none",
+      "dispBefore": false,
+      "visible": false,
+      "text": ""
+    },
+    {
+      "index": 7,
+      "outer": "<span class=\"fa fa-phone mr-1\"></span>",
+      "className": "fa fa-phone mr-1",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": true,
+      "text": ""
+    },
+    {
+      "index": 8,
+      "outer": "<i class=\"fa fa-exclamation-triangle fa-sm mr-1\"></i>",
+      "className": "fa fa-exclamation-triangle fa-sm mr-1",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": true,
+      "text": ""
+    },
+    {
+      "index": 9,
+      "outer": "<span class=\"fa fa-quote-left mr-3\"></span>",
+      "className": "fa fa-quote-left mr-3",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": true,
+      "text": ""
+    },
+    {
+      "index": 10,
+      "outer": "<span class=\"fa fa-quote-right ml-3\"></span>",
+      "className": "fa fa-quote-right ml-3",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": true,
+      "text": ""
+    },
+    {
+      "index": 11,
+      "outer": "<span class=\"fa fa-quote-left mr-3\"></span>",
+      "className": "fa fa-quote-left mr-3",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": false,
+      "text": ""
+    },
+    {
+      "index": 12,
+      "outer": "<span class=\"fa fa-quote-right ml-3\"></span>",
+      "className": "fa fa-quote-right ml-3",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": false,
+      "text": ""
+    },
+    {
+      "index": 13,
+      "outer": "<span class=\"fa fa-quote-left mr-3\"></span>",
+      "className": "fa fa-quote-left mr-3",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": false,
+      "text": ""
+    },
+    {
+      "index": 14,
+      "outer": "<span class=\"fa fa-quote-right ml-3\"></span>",
+      "className": "fa fa-quote-right ml-3",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": false,
+      "text": ""
+    },
+    {
+      "index": 15,
+      "outer": "<span class=\"fa fa-quote-left mr-3\"></span>",
+      "className": "fa fa-quote-left mr-3",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": false,
+      "text": ""
+    },
+    {
+      "index": 16,
+      "outer": "<span class=\"fa fa-quote-right ml-3\"></span>",
+      "className": "fa fa-quote-right ml-3",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": false,
+      "text": ""
+    },
+    {
+      "index": 17,
+      "outer": "<span class=\"fa fa-address-card mr-1\"></span>",
+      "className": "fa fa-address-card mr-1",
+      "computed": "FontAwesome",
+      "before": "none",
+      "after": "none",
+      "dispBefore": false,
+      "visible": false,
+      "text": ""
+    },
+    {
+      "index": 18,
+      "outer": "<i class=\"fa fa-phone fa-lg mr-2\"></i>",
+      "className": "fa fa-phone fa-lg mr-2",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": true,
+      "text": ""
+    },
+    {
+      "index": 19,
+      "outer": "<i class=\"fa fa-whatsapp fa-lg mr-2\"></i>",
+      "className": "fa fa-whatsapp fa-lg mr-2",
+      "computed": "FontAwesome",
+      "before": "none",
+      "after": "none",
+      "dispBefore": false,
+      "visible": false,
+      "text": ""
+    },
+    {
+      "index": 20,
+      "outer": "<i class=\"fa fa-envelope fa-lg\"></i>",
+      "className": "fa fa-envelope fa-lg",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": true,
+      "text": ""
+    },
+    {
+      "index": 21,
+      "outer": "<a class=\"btn btn-social-icon btn-facebook\" href=\"http://www.facebook.com/Auto-Garage-Services-100657211833420\"><i class=\"fa fa-facebook fa-lg\"></i></a>",
+      "className": "btn btn-social-icon btn-facebook",
+      "computed": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "before": "none",
+      "after": "none",
+      "dispBefore": false,
+      "visible": true,
+      "text": ""
+    },
+    {
+      "index": 22,
+      "outer": "<i class=\"fa fa-facebook fa-lg\"></i>",
+      "className": "fa fa-facebook fa-lg",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": true,
+      "text": ""
+    },
+    {
+      "index": 23,
+      "outer": "<i class=\"fa fa-whatsapp fa-lg\"></i>",
+      "className": "fa fa-whatsapp fa-lg",
+      "computed": "FontAwesome",
+      "before": "none",
+      "after": "none",
+      "dispBefore": false,
+      "visible": false,
+      "text": ""
+    },
+    {
+      "index": 24,
+      "outer": "<i class=\"fa fa-envelope fa-lg\"></i>",
+      "className": "fa fa-envelope fa-lg",
+      "computed": "FontAwesome",
+      "before": "\"\"",
+      "after": "none",
+      "dispBefore": true,
+      "visible": true,
+      "text": ""
+    }
+  ]
+}
