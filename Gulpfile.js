@@ -75,10 +75,8 @@ gulp.task('clean', function(){
 gulp.task('copyfonts', function(){
     // copy font files from node_modules (font-awesome) and project `fonts/` directory
     // Do NOT pipe fonts through image optimization — copy them as-is.
-    return gulp.src([
-        './node_modules/font-awesome/fonts/**/*.{eot,woff,woff2,ttf,svg}',
-        './fonts/**/*.{eot,woff,woff2,ttf,svg}'
-    ], { allowEmpty: true })
+    // Only copy project-local fonts to avoid bringing unversioned FontAwesome files from node_modules
+    return gulp.src('./fonts/**/*.{eot,woff,woff2,ttf,svg}', { allowEmpty: true })
     .pipe(gulp.dest('./dist/fonts'));
 });
 
